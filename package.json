@@ -1,0 +1,27 @@
+{
+  "name": "hot-restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbburnsy/hot-restaurant.git"
+  },
+  "keywords": [
+    "hot",
+    "restaurant"
+  ],
+  "author": "Luc, Don, Noha, Jarette, Neel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lbburnsy/hot-restaurant/issues"
+  },
+  "homepage": "https://github.com/lbburnsy/hot-restaurant#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^26.6.3"
+  }
+}
