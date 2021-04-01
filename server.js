@@ -39,11 +39,11 @@ app.get('/api/waitlist', (req, res) => res.json(waitlist));
 app.post('/api/reservations', (req, res) => {
 
     const newReservation = req.body;
-
+    console.log(newReservation);
     // Check on route name depending on input fields
     // But for now, mimic star wars idea.
     newReservation.routeName = newReservation.name.replace(/\s+/g, '').toLowerCase();
-    console.log(newReservation);
+    
 
     // reservations.push(newReservation);
     if (reservations.length < 6) {
