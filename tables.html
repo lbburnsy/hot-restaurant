@@ -70,6 +70,8 @@
 
 
     <script type="text/javascript">
+      const tableSection = document.getElementById("tableSection");
+      const waitlistSection = document.getElementById("waitlistSection");
       
       function getReservations()
       {
@@ -92,10 +94,10 @@
                     invited+=`
                  
                     <li class="list-group-item">
-                    <h2><span class="label label-primary">${i+1}</span> | ${data[i].uniqueID}</h2></li>`;
+                    <h2><span class="label label-primary">${i+1}</span> | ${data[i].uniqueId}</h2></li>`;
                    
                 }
-               document.getElementById("tableSection").innerHTML=invited;
+               tableSection.innerHTML=invited;
              
                 
                 
@@ -131,11 +133,11 @@
                 {
                   
                     waiting+=`<li class="list-group-item">
-                    <h2><span class="label label-primary">${i+1}</span> | ${data[i].uniqueID}</h2></li>`;
+                    <h2><span class="label label-primary">${i+1}</span> | ${data[i].uniqueId}</h2></li>`;
                     
                 }
               
-               document.getElementById("waitlistSection").innerHTML=waiting;
+               waitlistSection.innerHTML=waiting;
                 
                 
 
