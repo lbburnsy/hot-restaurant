@@ -1,0 +1,12 @@
+header {
+    font-size: 55px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
