@@ -46,7 +46,7 @@ app.post('/api/reservations', (req, res) => {
     
 
     // reservations.push(newReservation);
-    if (reservations.length < 6) {
+    if (reservations.length < 5) {
         reservations.push(newReservation);
     } else {
         waitlist.push(newReservation);
