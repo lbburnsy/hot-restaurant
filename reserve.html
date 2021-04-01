@@ -47,14 +47,14 @@
     </div>
     <script type="text/javascript">
     
-        const submitBtn = document.getElementById('#submit');
+        const submitBtn = document.getElementById('submit');
         submitBtn.addEventListener("click", (e) => {
             e.preventDefault();
 
-            const name = document.getElementById('#inputi').value.trim();
-            const phoneNum = document.getElementById('#inputii').value.trim();
-            const email = document.getElementById('#inputiii').value.trim();
-            const uniqueId = document.getElementById('#inputiv').value.trim();
+            const name = document.getElementById('inputi').value.trim();
+            const phoneNum = document.getElementById('inputii').value.trim();
+            const email = document.getElementById('inputiii').value.trim();
+            const uniqueId = document.getElementById('inputiv').value.trim();
 
             let newReservation = {
                 name: name,
@@ -68,7 +68,7 @@
                 headers: {
                     'content-types' : 'application/json'
                 },
-                body: json.stringify(newReservation)
+                body: JSON.stringify(newReservation)
             })
             .then((response) => response.json())
             .then((data) => {
